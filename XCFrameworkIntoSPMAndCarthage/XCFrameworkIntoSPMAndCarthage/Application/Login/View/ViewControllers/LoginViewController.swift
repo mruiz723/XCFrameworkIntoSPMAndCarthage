@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class LoginViewController: UIViewController {
     
@@ -22,7 +23,7 @@ class LoginViewController: UIViewController {
     
     // MARK: - IBActions
     @IBAction func logIn(_ sender: Any) {
-        
+        SVProgressHUD.show()
     }
     
 }

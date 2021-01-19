@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0947297625B75E3800566E3D /* SVProgressHUD.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0947297525B75E3800566E3D /* SVProgressHUD.xcframework */; };
+		0947297725B75E3800566E3D /* SVProgressHUD.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0947297525B75E3800566E3D /* SVProgressHUD.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		09B544FF25B748CB00C218D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B544FE25B748CB00C218D6 /* AppDelegate.swift */; };
 		09B5450125B748CB00C218D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B5450025B748CB00C218D6 /* SceneDelegate.swift */; };
 		09B5450325B748CB00C218D6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B5450225B748CB00C218D6 /* LoginViewController.swift */; };
@@ -15,7 +17,22 @@
 		09B5450B25B748CD00C218D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09B5450925B748CD00C218D6 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0947297825B75E3800566E3D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0947297725B75E3800566E3D /* SVProgressHUD.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0947297525B75E3800566E3D /* SVProgressHUD.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SVProgressHUD.xcframework; path = Carthage/Build/SVProgressHUD.xcframework; sourceTree = "<group>"; };
 		09B544FB25B748CB00C218D6 /* XCFrameworkIntoSPMAndCarthage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCFrameworkIntoSPMAndCarthage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09B544FE25B748CB00C218D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09B5450025B748CB00C218D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +48,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0947297625B75E3800566E3D /* SVProgressHUD.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0947297425B75E3800566E3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0947297525B75E3800566E3D /* SVProgressHUD.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		09B544F225B748CB00C218D6 = {
 			isa = PBXGroup;
 			children = (
 				09B544FD25B748CB00C218D6 /* XCFrameworkIntoSPMAndCarthage */,
 				09B544FC25B748CB00C218D6 /* Products */,
+				0947297425B75E3800566E3D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +160,7 @@
 				09B544F725B748CB00C218D6 /* Sources */,
 				09B544F825B748CB00C218D6 /* Frameworks */,
 				09B544F925B748CB00C218D6 /* Resources */,
+				0947297825B75E3800566E3D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
